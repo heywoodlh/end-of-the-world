@@ -3,7 +3,7 @@
 root_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 ## Setup Docker registry
-"${root_dir}"/registry.sh
+"${root_dir}"/docker/registry.sh
 
 ## Download and serve wikipedia
 "${root_dir}"/docs/wikipedia/sync.sh
