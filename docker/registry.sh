@@ -8,7 +8,7 @@ docker ps -a | grep -q docker-registry || docker run -d --name=docker-registry -
 
 if ping -c 1 docker.com &>/dev/null 
 then
-	for image in $(cat docker-images.txt)
+	for image in $(cat ${root_dir}/docker-images.txt)
 	do
 		docker pull docker.io/${image}
 		docker tag docker.io/${image} localhost:5000/${image}
