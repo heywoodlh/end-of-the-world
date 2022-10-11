@@ -1,6 +1,6 @@
-library/registry
+library/registry:latest
 library/nginx:alpine
 library/ubuntu:22.04
-kiwix/kiwix-serve
-heywoodlh/apt-mirror
-heywoodlh/archlinux
+kiwix/kiwix-serve:latest
+heywoodlh/apt-mirror:latest
+heywoodlh/archlinux:latest

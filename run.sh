@@ -13,10 +13,6 @@ root_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 "${root_dir}"/repos/pacman/sync.sh 
 "${root_dir}"/repos/pacman/serve.sh 
 
-## Download and serve ubuntu repository
-"${root_dir}"/repos/ubuntu/sync.sh 
-"${root_dir}"/repos/ubuntu/serve.sh 
-
 ## Download and serve f-droid repository
 "${root_dir}"/repos/f-droid/sync.sh 
 "${root_dir}"/repos/f-droid/serve.sh 
